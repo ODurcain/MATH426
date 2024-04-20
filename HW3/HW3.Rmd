@@ -1,0 +1,23 @@
+---
+title: "MATH 426 HW3"
+author: "OD"
+date: "2024-02-29"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Your main goal should be to write a code to solve the system $$Ax=b$$ using an $$LU$$ decomposition with pviots.  Please work with your classmates on the Discord server.  An algorithm is proposed in the textbook.  Do your best, as a group, to optimize the code. This code will not be collected from any individual.  Instead turn in your results to the problems below:
+Let $$A_n$$ denote $$n\times n$$ matrix whose form is illustrated by 
+$$
+A_5=\begin{matrix}1&0&0&0&1\-1&1&0&0&1\-1&-1&1&0&1\-1&-1&-1&1&1\-1&-1&-1&-1&1\\end{bmatrix}
+$$
+
+              Show that if Gaussian elimination with partial pivoting is used, then $$A_n$$ can be reduced to upper-triangular fomr without row interchanges, and the resulting matrix $$U$$ has $$U_{nn}=2^{n-1}$$.  Thus $$||U||_{\infty}/||A||_{\infty}=2^{n-1}/n$$.
+
+           3.Show that if $$L\in \mathbb{R}^{n\times n}$$ and $$U\in \mathbb{R}^{n\times n}$$ are full lower and upper triangular, respectively, the flop count for computing the product $$LU$$ is $$\frac{2}{3}n^3$$.
+
